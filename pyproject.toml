@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "base-schemas"
-version = "3.0.0"
+version = "3.0.0rc1"
 description = "MLAI base DataJoint schemas extending the shared SCENE layer"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -13,7 +13,7 @@ dependencies = [
     "numpy",  # ingestion reads the GUI's .npy metadata files
     "packaging", # required by datajoint > 1
     "pydantic>=2.6",  # validates manifest entries; already required by datajoint (pydantic-settings)
-    "scene-pipelines @ git+https://github.com/SCENE-Collaboration/SCENE-pipelines.git@dev",
+    "scene-pipelines @ git+https://github.com/SCENE-Collaboration/SCENE-pipelines.git@v0.0.1",
 ]
 
 [tool.setuptools.packages.find]
